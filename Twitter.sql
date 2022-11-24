@@ -51,9 +51,14 @@ CREATE TABLE Comments (
 );
 
 CREATE TABLE Follow (
-  id int PRIMARY KEY AUTO_INCREMENT,
-  user_id int,
-  following_id int unique
+--   id int PRIMARY KEY AUTO_INCREMENT,
+--   user_id int,
+--   following_id int unique
+     follower VARCHAR(40) not null,
+     followee VARCHAR(40) not null,
+     foreign key(follower) references user(userid),
+     foreign key(followee) references user(userid),
+     primary key(follower, followee)
 );
 
 -- ALTER TABLE Users ADD FOREIGN KEY (id) REFERENCES Post(user_id);
