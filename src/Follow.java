@@ -145,7 +145,7 @@ class DBConnection {
             }
             else
             {
-                output = "팔로잉 목록이 없습니다.";
+                output = "팔로워 목록이 없습니다.";
             }
         }
         catch (SQLException e)
