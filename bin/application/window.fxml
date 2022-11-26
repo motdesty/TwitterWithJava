@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="160.0" style="-fx-background-color: rgb(207, 245, 231);">
+         <children>
+            <Pane prefHeight="147.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="59.0" layoutY="67.0" text="TWITTER" />
+               </children>
+            </Pane>
+            <Button fx:id="btn1" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClick" prefHeight="37.0" prefWidth="160.0" stylesheets="@application.css" text="REGISTER">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btn2" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClick" prefHeight="35.0" prefWidth="160.0" stylesheets="@application.css" text="LOG IN">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btn3" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClick" prefHeight="33.0" prefWidth="160.0" stylesheets="@application.css" text="CHANGE PASSWORD">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btn4" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClick" prefHeight="30.0" prefWidth="160.0" stylesheets="@application.css" text="Button">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="panel" layoutX="161.0" layoutY="21.0" prefHeight="67.0" prefWidth="627.0" style="-fx-background-color: rgb(100,100,130);">
+         <children>
+            <Label fx:id="label1" layoutX="22.0" layoutY="7.0" text="Label" />
+            <Label fx:id="label2" layoutX="21.0" layoutY="36.0" text="Label" />
+         </children>
+      </Pane>
+      <StackPane layoutX="165.0" layoutY="100.0" prefHeight="279.0" prefWidth="605.0">
+         <children>
+            <FlowPane>
+               <children>
+                  <GridPane fx:id="pn1" prefHeight="298.0" prefWidth="605.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="29.66666666666667" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="263.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox prefHeight="8.0" prefWidth="605.0" spacing="10.0">
+                           <children>
+                              <TextField prefHeight="22.0" prefWidth="536.0" />
+                              <Button mnemonicParsing="false" text="Button" />
+                           </children>
+                        </HBox>
+                        <Label text="first" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="pn2" prefHeight="298.0" prefWidth="605.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="29.66666666666667" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="263.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <HBox prefHeight="8.0" prefWidth="605.0" spacing="10.0">
+                           <children>
+                              <TextField prefHeight="22.0" prefWidth="536.0" />
+                              <Button mnemonicParsing="false" text="Button" />
+                           </children>
+                        </HBox>
+                        <Label text="2" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="pn3" prefHeight="298.0" prefWidth="605.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="29.66666666666667" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="263.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <HBox prefHeight="8.0" prefWidth="605.0" spacing="10.0">
+                           <children>
+                              <TextField prefHeight="22.0" prefWidth="536.0" />
+                              <Button mnemonicParsing="false" text="Button" />
+                           </children>
+                        </HBox>
+                        <Label text="3" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="pn4" prefHeight="298.0" prefWidth="605.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="29.66666666666667" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="263.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <HBox prefHeight="8.0" prefWidth="605.0" spacing="10.0">
+                           <children>
+                              <TextField prefHeight="22.0" prefWidth="536.0" />
+                              <Button mnemonicParsing="false" text="Button" />
+                           </children>
+                        </HBox>
+                        <Label text="4" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </FlowPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
